@@ -11,14 +11,16 @@ def get_first_column(data):
     column=data.split('\n')
     for i in column:
         list1=column[idx].split(',')
-        print(list1[0])
+        s.append(list1[0])
         idx+=1
         
     
-    return 
+    return s
 
     
 data=open("data.csv").read()
 print(get_first_column(data))
+    
+    
     
 # Read the csv file
