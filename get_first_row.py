@@ -1,3 +1,6 @@
+from find_number_of_columns import find_number_of_columns
+
+
 def get_first_row(data):   
    """
    Get the first row from a CSV file.
@@ -6,7 +9,10 @@ def get_first_row(data):
     Return:
         list: First row.
    """
-   
-   return
+   column_name=data.split()    
+   return column_name[0].split(",")
+
+data = open('data.csv').read()
+print(get_first_row(data))
 
 # Read the csv file
