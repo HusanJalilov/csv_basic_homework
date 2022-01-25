@@ -12,12 +12,8 @@ def get_first_column(data):
     for i in column:
         list1=column[idx].split(',')
         s.append(list1[0])
-        idx+=1
-        
-    
+        idx+=1   
     return s
-
-    
 data=open("data.csv").read()
 print(get_first_column(data))
     
